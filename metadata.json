@@ -1,0 +1,8 @@
+{
+  "name": "RAP",
+  "description": "Real Artist Protection (RAP) powered by ROCC$TAR AI. The global standard for artist security, rights intelligence, and zero-trust financial protection.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
