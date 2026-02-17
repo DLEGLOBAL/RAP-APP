@@ -12,21 +12,24 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #050505;
-      color: #E5E5E5;
+      background-color: #020617; /* Deepest blue/black */
+      color: #F8FAFC;
       overflow-x: hidden;
     }
     .mono {
       font-family: 'JetBrains Mono', monospace;
     }
     .glass {
-      background: rgba(20, 20, 20, 0.7);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(15, 23, 42, 0.7); /* Deep slate blue */
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(56, 189, 248, 0.1); /* Sky blue border tint */
     }
     .neon-border {
-      box-shadow: 0 0 10px rgba(0, 214, 50, 0.2);
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+    }
+    .blue-glow {
+      box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
     }
     .scrollbar-hide::-webkit-scrollbar {
       display: none;
@@ -34,6 +37,22 @@
     .scrollbar-hide {
       -ms-overflow-style: none;
       scrollbar-width: none;
+    }
+    .text-logo-blue {
+      color: #38BDF8;
+    }
+    .bg-logo-blue {
+      background-color: #38BDF8;
+    }
+    .border-logo-blue {
+      border-color: #38BDF8;
+    }
+    @keyframes pulse-blue {
+      0%, 100% { opacity: 0.8; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.05); }
+    }
+    .animate-pulse-blue {
+      animation: pulse-blue 3s infinite ease-in-out;
     }
   </style>
 <script type="importmap">
@@ -48,7 +67,7 @@
 }
 </script>
 </head>
-<body class="bg-black">
+<body class="bg-slate-950">
   <div id="root"></div>
 </body>
 </html>
